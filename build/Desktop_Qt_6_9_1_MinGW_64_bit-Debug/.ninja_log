@@ -1,0 +1,9 @@
+# ninja log v6
+2	413	7842636179939012	QtAuthentication_autogen/timestamp	1792221c38d0f9d9
+2	413	7842636179939012	QtAuthentication_autogen/mocs_compilation.cpp	1792221c38d0f9d9
+434	1483	7842636180437062	CMakeFiles/QtAuthentication.dir/AuthWindow.cpp.obj	a809a2a9333406a2
+2	413	7842636179939012	D:/Qt projects/QtAuthentication/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/QtAuthentication_autogen/timestamp	1792221c38d0f9d9
+2	413	7842636179939012	D:/Qt projects/QtAuthentication/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/QtAuthentication_autogen/mocs_compilation.cpp	1792221c38d0f9d9
+416	1475	7842636180346168	CMakeFiles/QtAuthentication.dir/QtAuthentication_autogen/mocs_compilation.cpp.obj	8cb4bd3f4813ccdf
+430	1487	7842636180437062	CMakeFiles/QtAuthentication.dir/main.cpp.obj	5dfd6ff9cd08daae
+1487	1646	7842636191063335	QtAuthentication.exe	5eb1351cce782057
