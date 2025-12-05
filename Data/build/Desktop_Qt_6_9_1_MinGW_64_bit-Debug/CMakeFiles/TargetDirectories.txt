@@ -1,0 +1,5 @@
+D:/Qt projects/Data/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/Data.dir
+D:/Qt projects/Data/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+D:/Qt projects/Data/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+D:/Qt projects/Data/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/Data_autogen_timestamp_deps.dir
+D:/Qt projects/Data/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/Data_autogen.dir

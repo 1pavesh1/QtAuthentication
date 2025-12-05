@@ -1,0 +1,21 @@
+# ninja log v6
+19	569	7866350302390690	QtAuthentication_autogen/timestamp	1792221c38d0f9d9
+592	2891	7866350303101509	CMakeFiles/QtAuthentication.dir/AuthWindow.cpp.obj	a809a2a9333406a2
+19	569	7866350302390690	QtAuthentication_autogen/mocs_compilation.cpp	1792221c38d0f9d9
+19	569	7866350302390690	D:/Qt projects/QtAuthentication/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/QtAuthentication_autogen/timestamp	1792221c38d0f9d9
+19	569	7866350302390690	D:/Qt projects/QtAuthentication/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/QtAuthentication_autogen/mocs_compilation.cpp	1792221c38d0f9d9
+11	25	7866348812591604	CMakeFiles/clean.additional	adcc2f785672e3a3
+588	2701	7866350303060268	CMakeFiles/QtAuthentication.dir/main.cpp.obj	5dfd6ff9cd08daae
+570	2880	7866350302880210	CMakeFiles/QtAuthentication.dir/QtAuthentication_autogen/mocs_compilation.cpp.obj	8cb4bd3f4813ccdf
+3091	3589	7866350328092689	QtAuthentication.exe	6c1a3767b8b9ef11
+632	695	7866349583628263	QtAuthentication_autogen/EWIEGA46WW/qrc_IMG.cpp	64299117f157f8e
+596	3091	7866350303141623	CMakeFiles/QtAuthentication.dir/RegWindow.cpp.obj	2a1dd4204a8644b6
+599	2859	7866350303161670	CMakeFiles/QtAuthentication.dir/WelcomeWindow.cpp.obj	fd0dbd33aa6d1f29
+2	526	7866682160502647	build.ninja	f35b08dbb23a0c06
+632	695	7866349583628263	D:/Qt projects/QtAuthentication/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/QtAuthentication_autogen/EWIEGA46WW/qrc_IMG.cpp	64299117f157f8e
+727	967	7866349584017351	CMakeFiles/QtAuthentication.dir/QtAuthentication_autogen/EWIEGA46WW/qrc_IMG.cpp.obj	233a289b45073635
+194	1454	7851137454741570	CMakeFiles/QtAuthentication.dir/ConfirmationAccessCode.cpp.obj	df3142557c8b5a2
+197	1472	7851137454771566	CMakeFiles/QtAuthentication.dir/RepairPassword.cpp.obj	ffb48f1d34692551
+603	2859	7866350303201780	CMakeFiles/QtAuthentication.dir/ConfirmationAccessCodeWindow.cpp.obj	bd8bb5e03ebacd89
+26	31	7866348812793458	clean	101d0f6048d5fe99
+606	2921	7866350303239315	CMakeFiles/QtAuthentication.dir/RepairPasswordWindow.cpp.obj	3852113f0626d176

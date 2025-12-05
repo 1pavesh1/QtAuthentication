@@ -1,0 +1,8 @@
+# ninja log v6
+13	103	7866677979689613	Data_autogen/timestamp	aa7a71752dd600c9
+13	103	7866677979689613	Data_autogen/mocs_compilation.cpp	aa7a71752dd600c9
+13	103	7866677979689613	D:/Qt projects/Data/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/Data_autogen/timestamp	aa7a71752dd600c9
+970	1143	7866677989259310	libData.a	43d38316d537da28
+13	103	7866677979689613	D:/Qt projects/Data/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/Data_autogen/mocs_compilation.cpp	aa7a71752dd600c9
+206	343	7866677917993983	CMakeFiles/Data.dir/Data_autogen/mocs_compilation.cpp.obj	41a52e5d237a7ad9
+104	968	7866677980598849	CMakeFiles/Data.dir/Data.cpp.obj	9cb7370b8c83ac03

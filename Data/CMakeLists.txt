@@ -1,0 +1,24 @@
+cmake_minimum_required(VERSION 3.16)
+
+project(Data LANGUAGES CXX)
+
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
+
+add_library(Data STATIC
+  Data.cpp
+  Data.h
+  DTO/UserModel.h
+  Enum/TypeNotification.h
+
+)
+
+target_link_libraries(Data PRIVATE Qt${QT_VERSION_MAJOR}::Core)
+
+target_compile_definitions(Data PRIVATE DATA_LIBRARY)

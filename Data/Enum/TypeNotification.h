@@ -1,0 +1,12 @@
+#ifndef TYPENOTIFICATION_H
+#define TYPENOTIFICATION_H
+
+enum TypeNotification
+{
+    WARNING,
+    DANGER,
+    INFORMATION,
+    SUCCESS
+};
+
+#endif // TYPENOTIFICATION_H
