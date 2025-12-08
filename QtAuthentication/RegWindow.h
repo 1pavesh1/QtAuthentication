@@ -3,6 +3,7 @@
 
 #include "InterfaceWindows/BaseWindow.h"
 #include "Animations/AnimationWidgets/AnimationSwapFrame.h"
+#include "Validator/Validators/ValidatorUserInfo.h"
 #include "AuthWindow.h"
 #include "WelcomeWindow.h"
 

@@ -17,8 +17,13 @@ add_library(Data STATIC
   DTO/UserModel.h
   Enum/TypeNotification.h
 
+
+
 )
 
-target_link_libraries(Data PRIVATE Qt${QT_VERSION_MAJOR}::Core)
+target_link_libraries(Data
+      PRIVATE
+        Qt${QT_VERSION_MAJOR}::Core
+)
 
 target_compile_definitions(Data PRIVATE DATA_LIBRARY)

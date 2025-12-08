@@ -2,6 +2,7 @@
 #define AUTHWINDOW_H
 
 #include "InterfaceWindows/BaseWindow.h"
+#include "Validator/Validators/ValidatorUserInfo.h"
 #include "ConfirmationAccessCodeWindow.h"
 #include "RepairPasswordWindow.h"
 #include "RegWindow.h"

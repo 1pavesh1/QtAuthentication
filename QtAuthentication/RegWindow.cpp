@@ -51,7 +51,12 @@ void RegWindow::on_authLink_clicked()
 
 void RegWindow::on_userInfoButton_clicked()
 {
-    animationSwapFrame.CloseAnimation(this, ui->UserInfoFrame);
+    ValidatorUserInfo validatorUserInfo(this);
+    QList <QLineEdit*> listLineEdits = ui->UserInfoFrame->findChildren<QLineEdit*>();
+    if (validatorUserInfo.InputDataIsValid(listLineEdits))
+    {
+        animationSwapFrame.CloseAnimation(this, ui->UserInfoFrame);
+    }
 }
 
 void RegWindow::on_backToUserInfoFromPhoneButton_clicked()
@@ -61,7 +66,12 @@ void RegWindow::on_backToUserInfoFromPhoneButton_clicked()
 
 void RegWindow::on_phoneButton_clicked()
 {
-    animationSwapFrame.CloseAnimation(this, ui->InputPhoneFrame);
+    ValidatorUserInfo validatorUserInfo(this);
+    QList <QLineEdit*> listLineEdits = ui->InputPhoneFrame->findChildren<QLineEdit*>();
+    if (validatorUserInfo.InputDataIsValid(listLineEdits))
+    {
+        animationSwapFrame.CloseAnimation(this, ui->InputPhoneFrame);
+    }
 }
 
 void RegWindow::on_backToPhoneFromAccessCodeButton_clicked()
@@ -71,7 +81,12 @@ void RegWindow::on_backToPhoneFromAccessCodeButton_clicked()
 
 void RegWindow::on_accessCodeButton_clicked()
 {
-    animationSwapFrame.CloseAnimation(this, ui->InputAccessCodePhoneFrame);
+    ValidatorUserInfo validatorUserInfo(this);
+    QList <QLineEdit*> listLineEdits = ui->InputAccessCodePhoneFrame->findChildren<QLineEdit*>();
+    if (validatorUserInfo.InputDataIsValid(listLineEdits))
+    {
+        animationSwapFrame.CloseAnimation(this, ui->InputAccessCodePhoneFrame);
+    }
 }
 
 void RegWindow::on_backToAccessCodeInfoButton_clicked()

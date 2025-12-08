@@ -25,9 +25,14 @@ void ConfirmationAccessCodeWindow::DisconnectSlots()
 
 void ConfirmationAccessCodeWindow::on_confirmAccessCodeButton_clicked()
 {
-    this->close();
-    WelcomeWindow *welcomeWindow = new WelcomeWindow();
-    welcomeWindow->setAttribute(Qt::WA_DeleteOnClose);
-    welcomeWindow->show();
+    ValidatorUserInfo validatorUserInfo(this);
+    QList <QLineEdit*> listLineEdits = this->findChildren<QLineEdit*>();
+    if (validatorUserInfo.InputDataIsValid(listLineEdits))
+    {
+        this->close();
+        WelcomeWindow *welcomeWindow = new WelcomeWindow();
+        welcomeWindow->setAttribute(Qt::WA_DeleteOnClose);
+        welcomeWindow->show();
+    }
 }
 

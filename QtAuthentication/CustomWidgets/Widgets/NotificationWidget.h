@@ -38,11 +38,7 @@ private:
 
     void SetPosition()
     {
-        QTimer::singleShot(10, this, [this]()
-                           {
-                               QPoint parentCenter = parentWidget()->rect().center();
-                               move(parentCenter.x() - width() / 2, 10);
-                           });
+        move(parentWidget()->rect().center().x() - width() / 2, 10);
     }
 
     void setOpacity(float opacity)
@@ -164,6 +160,17 @@ private:
         return mOpacity;
     }
 
+    void Show()
+    {
+        SetPosition();
+
+        show();
+        raise();
+        activateWindow();
+
+        StartTimer();
+    }
+
 public:
     NotificationWidget(QWidget *parent, const QString &message, const TypeNotification &typeNotification)
         : QWidget(parent), message(message), typeNotification(typeNotification)
@@ -177,17 +184,7 @@ public:
         InitializationInterface();
         LoadContent();
         OpenAnimation();
-    }
-
-    void Show()
-    {
-        SetPosition();
-
-        show();
-        raise();
-        activateWindow();
-
-        StartTimer();
+        Show();
     }
 
     void paintEvent(QPaintEvent *event) override
@@ -207,9 +204,6 @@ public:
     {
         Q_UNUSED(event);
 
-        if (timer && timer->isActive())
-            timer->stop();
-
         CloseAnimation();
     }
 
@@ -217,12 +211,6 @@ public:
     {
         Q_UNUSED(event);
         raise();
-    }
-
-    ~NotificationWidget()
-    {
-        if (timer && timer->isActive())
-            timer->stop();
     }
 };
 

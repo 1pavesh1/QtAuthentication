@@ -111,7 +111,7 @@ QLineEdit::placeholder
     <string/>
    </property>
    <property name="maxLength">
-    <number>25</number>
+    <number>40</number>
    </property>
    <property name="placeholderText">
     <string>Логин</string>
@@ -239,7 +239,7 @@ QLineEdit::placeholder
     <string/>
    </property>
    <property name="maxLength">
-    <number>25</number>
+    <number>30</number>
    </property>
    <property name="echoMode">
     <enum>QLineEdit::EchoMode::Password</enum>
@@ -364,7 +364,7 @@ QLineEdit::placeholder
     <string/>
    </property>
    <property name="maxLength">
-    <number>25</number>
+    <number>50</number>
    </property>
    <property name="echoMode">
     <enum>QLineEdit::EchoMode::Normal</enum>

@@ -2,6 +2,7 @@
 #define CONFIRMATIONACCESSCODEWINDOW_H
 
 #include "InterfaceWindows/BaseWindow.h"
+#include "Validator/Validators/ValidatorUserInfo.h"
 #include "WelcomeWindow.h"
 
 namespace Ui {

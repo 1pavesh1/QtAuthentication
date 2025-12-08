@@ -3,6 +3,7 @@
 
 #include "InterfaceWindows/BaseWindow.h"
 #include "Animations/AnimationWidgets/AnimationSwapFrame.h"
+#include "Validator/Validators/ValidatorUserInfo.h"
 #include "AuthWindow.h"
 
 namespace Ui {
@@ -16,6 +17,7 @@ class RepairPasswordWindow : public BaseWindow
 public:
     explicit RepairPasswordWindow(QWidget *parent = nullptr);
     ~RepairPasswordWindow();
+    void setInterfaceCode(const bool &isMail);
 private slots:
 
     void on_sendSMSCodeButton_clicked();
@@ -23,6 +25,10 @@ private slots:
     void on_sendRepeatSMSCodeButton_clicked();
 
     void on_newPasswordButton_clicked();
+
+    void on_sendMailCodeButton_clicked();
+
+    void on_sendRepeatMailCodeButton_clicked();
 
 private:
     Ui::RepairPasswordWindow *ui;

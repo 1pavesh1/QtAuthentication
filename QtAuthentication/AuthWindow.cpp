@@ -43,10 +43,15 @@ void AuthWindow::ChangedEye()
 
 void AuthWindow::on_authButton_clicked()
 {
-    this->close();
-    ConfirmationAccessCodeWindow *confirmationAccessCodeWindow = new ConfirmationAccessCodeWindow();
-    confirmationAccessCodeWindow->setAttribute(Qt::WA_DeleteOnClose);
-    confirmationAccessCodeWindow->show();
+    ValidatorUserInfo validatorUserInfo(this);
+    QList <QLineEdit*> listLineEdits = this->findChildren<QLineEdit*>();
+    if (validatorUserInfo.InputDataIsValid(listLineEdits))
+    {
+        this->close();
+        ConfirmationAccessCodeWindow *confirmationAccessCodeWindow = new ConfirmationAccessCodeWindow();
+        confirmationAccessCodeWindow->setAttribute(Qt::WA_DeleteOnClose);
+        confirmationAccessCodeWindow->show();
+    }
 }
 
 void AuthWindow::on_regLink_clicked()
@@ -59,8 +64,19 @@ void AuthWindow::on_regLink_clicked()
 
 void AuthWindow::on_passwordLink_clicked()
 {
-    this->close();
-    RepairPasswordWindow *repairPasswordWindow = new RepairPasswordWindow();
-    repairPasswordWindow->setAttribute(Qt::WA_DeleteOnClose);
-    repairPasswordWindow->show();
+    ValidatorUserInfo validatorUserInfo(this);
+    QList <QLineEdit*> listLineEdits = { ui->phoneQLineEdit };
+    if (validatorUserInfo.InputDataIsValid(listLineEdits))
+    {
+        RepairPasswordWindow *repairPasswordWindow = new RepairPasswordWindow();
+
+        if (ui->phoneQLineEdit->text().contains('@'))
+            repairPasswordWindow->setInterfaceCode(true);
+        else
+            repairPasswordWindow->setInterfaceCode(false);
+
+        this->close();
+        repairPasswordWindow->setAttribute(Qt::WA_DeleteOnClose);
+        repairPasswordWindow->show();
+    }
 }

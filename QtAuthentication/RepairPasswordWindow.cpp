@@ -13,6 +13,14 @@ RepairPasswordWindow::~RepairPasswordWindow()
     delete ui;
 }
 
+void RepairPasswordWindow::setInterfaceCode(const bool &isMail)
+{
+    if (isMail)
+        ui->acceptCodeSMSFrame->setVisible(false);
+    else
+        ui->acceptCodeMailFrame->setVisible(false);
+}
+
 void RepairPasswordWindow::ConnectSlots()
 {
 
@@ -33,6 +41,16 @@ void RepairPasswordWindow::on_sendRepeatSMSCodeButton_clicked()
 
 }
 
+void RepairPasswordWindow::on_sendMailCodeButton_clicked()
+{
+    animationSwapFrame.CloseAnimation(this, ui->acceptCodeMailFrame);
+}
+
+void RepairPasswordWindow::on_sendRepeatMailCodeButton_clicked()
+{
+
+}
+
 void RepairPasswordWindow::on_newPasswordButton_clicked()
 {
     this->close();
@@ -40,4 +58,3 @@ void RepairPasswordWindow::on_newPasswordButton_clicked()
     authWindow->setAttribute(Qt::WA_DeleteOnClose);
     authWindow->show();
 }
-

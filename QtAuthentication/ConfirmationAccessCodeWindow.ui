@@ -101,7 +101,7 @@ QLineEdit::placeholder
     <string/>
    </property>
    <property name="maxLength">
-    <number>25</number>
+    <number>6</number>
    </property>
    <property name="echoMode">
     <enum>QLineEdit::EchoMode::Password</enum>

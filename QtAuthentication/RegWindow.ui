@@ -105,11 +105,11 @@
 }</string>
     </property>
     <property name="text">
-     <string>Придумайте код доступа из 5 цифр
+     <string>Придумайте код доступа из 6 цифр
 его вы будете при каждом входе в приложение</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="AccessCodeQLineEdit">
+   <widget class="QLineEdit" name="accessCodeQLineEdit">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -154,7 +154,7 @@ QLineEdit::placeholder
      <string/>
     </property>
     <property name="maxLength">
-     <number>25</number>
+     <number>6</number>
     </property>
     <property name="echoMode">
      <enum>QLineEdit::EchoMode::Password</enum>
@@ -537,7 +537,7 @@ QLineEdit::placeholder
      <string/>
     </property>
     <property name="maxLength">
-     <number>25</number>
+     <number>15</number>
     </property>
     <property name="placeholderText">
      <string>Номер телефона</string>
@@ -754,7 +754,7 @@ QLineEdit::placeholder
      <string/>
     </property>
     <property name="maxLength">
-     <number>25</number>
+     <number>30</number>
     </property>
     <property name="echoMode">
      <enum>QLineEdit::EchoMode::Password</enum>
@@ -836,7 +836,7 @@ QLineEdit::placeholder
      <string/>
     </property>
     <property name="maxLength">
-     <number>25</number>
+     <number>40</number>
     </property>
     <property name="placeholderText">
      <string>Логин</string>
@@ -1006,12 +1006,12 @@ QPushButton:hover
    </widget>
    <zorder>passwordQLineEdit</zorder>
    <zorder>regLabel</zorder>
-   <zorder>loginQLineEdit</zorder>
    <zorder>line</zorder>
    <zorder>authLink</zorder>
    <zorder>openEye</zorder>
    <zorder>closeEye</zorder>
    <zorder>userInfoButton</zorder>
+   <zorder>loginQLineEdit</zorder>
   </widget>
   <widget class="QFrame" name="InputAccessCodePhoneFrame">
    <property name="geometry">
@@ -1114,7 +1114,7 @@ QPushButton:hover
      <string>Код</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="codeQLineEdit">
+   <widget class="QLineEdit" name="phoneAccessCodeQLineEdit">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -1159,7 +1159,7 @@ QLineEdit::placeholder
      <string/>
     </property>
     <property name="maxLength">
-     <number>25</number>
+     <number>6</number>
     </property>
     <property name="echoMode">
      <enum>QLineEdit::EchoMode::Password</enum>
