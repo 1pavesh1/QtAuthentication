@@ -1,0 +1,139 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-7545816e73782786175f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						3,
+						4,
+						5
+					]
+				},
+				{
+					"build" : "Common",
+					"jsonFile" : "directory-Common-Debug-933b1332a1e521fcbe5b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "D:/Qt projects/QtAuthentication/Common",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "QtAuthentication",
+					"targetIndexes" : 
+					[
+						3,
+						4,
+						5
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "Common",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "Common::@13b50f4fff9a3833e1fc",
+					"jsonFile" : "target-Common-Debug-d398f5c85c1479591c2a.json",
+					"name" : "Common",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Common_autogen::@13b50f4fff9a3833e1fc",
+					"jsonFile" : "target-Common_autogen-Debug-4ab2e3fe285fffbc9dd4.json",
+					"name" : "Common_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Common_autogen_timestamp_deps::@13b50f4fff9a3833e1fc",
+					"jsonFile" : "target-Common_autogen_timestamp_deps-Debug-e078f1bc3905f128c076.json",
+					"name" : "Common_autogen_timestamp_deps",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "QtAuthentication::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-QtAuthentication-Debug-be4b7870e48d562094d7.json",
+					"name" : "QtAuthentication",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "QtAuthentication_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-QtAuthentication_autogen-Debug-f8c4365e9bca0d995ffa.json",
+					"name" : "QtAuthentication_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "QtAuthentication_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-QtAuthentication_autogen_timestamp_deps-Debug-43253d2f01bd2fe7f819.json",
+					"name" : "QtAuthentication_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Qt projects/QtAuthentication/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug",
+		"source" : "D:/Qt projects/QtAuthentication/QtAuthentication"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
