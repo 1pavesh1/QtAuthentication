@@ -1,0 +1,16 @@
+# ninja log v6
+26	896	7873503570412352	QtAuthentication_autogen/timestamp	539a79a2379e8500
+26	896	7873503570412352	QtAuthentication_autogen/mocs_compilation.cpp	539a79a2379e8500
+26	896	7873503570412352	D:/Qt projects/QtAuthentication/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/QtAuthentication_autogen/timestamp	539a79a2379e8500
+26	896	7873503570412352	D:/Qt projects/QtAuthentication/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/QtAuthentication_autogen/mocs_compilation.cpp	539a79a2379e8500
+899	997	7873503571775399	QtAuthentication_autogen/EWIEGA46WW/qrc_IMG.cpp	64299117f157f8e
+899	997	7873503571775399	D:/Qt projects/QtAuthentication/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/QtAuthentication_autogen/EWIEGA46WW/qrc_IMG.cpp	64299117f157f8e
+1034	1293	7873503572194597	CMakeFiles/QtAuthentication.dir/QtAuthentication_autogen/EWIEGA46WW/qrc_IMG.cpp.obj	8670981c11962cf5
+1015	2849	7873503571994756	CMakeFiles/QtAuthentication.dir/main.cpp.obj	fc4033130d98b3ae
+1025	2868	7873503572093936	CMakeFiles/QtAuthentication.dir/WelcomeWindow.cpp.obj	40914fe3cd9fc197
+1031	2998	7873503572093936	CMakeFiles/QtAuthentication.dir/RepairPasswordWindow.cpp.obj	2c9f16b227343718
+1018	3036	7873503571994756	CMakeFiles/QtAuthentication.dir/AuthWindow.cpp.obj	8e7d4a8ed6f40a86
+1027	3058	7873503572093936	CMakeFiles/QtAuthentication.dir/ConfirmationAccessCodeWindow.cpp.obj	1ce65ba77991aaa3
+998	3085	7873503571852331	CMakeFiles/QtAuthentication.dir/QtAuthentication_autogen/mocs_compilation.cpp.obj	6b9749010f1b2743
+1021	3265	7873503572057405	CMakeFiles/QtAuthentication.dir/RegWindow.cpp.obj	519e1dea87cd58d6
+3265	3963	7873503594528511	QtAuthentication.exe	6c1a3767b8b9ef11
