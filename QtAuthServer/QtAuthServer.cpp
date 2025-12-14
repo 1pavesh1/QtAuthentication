@@ -5,7 +5,6 @@
 QtAuthServer::QtAuthServer(int nPort, QObject *parent) : QObject(parent),
     pointerTcpServer(new QTcpServer(this))
 {
-
     connect(pointerTcpServer, SIGNAL(newConnection()), SLOT(on_newConnection()));
 
     if (false == pointerTcpServer->listen(QHostAddress::Any, nPort))

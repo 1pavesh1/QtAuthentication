@@ -8,6 +8,13 @@ qt_standard_project_setup()
 qt_add_executable(QtAuthServer
     main.cpp
     QtAuthServer.h QtAuthServer.cpp
+    CommandHandler/InterfaceCommandHandler/InterfaceCommandHandler.h
+    CommandHandler/Commands/CommandDataBase.h
+    CommandHandler/Commands/CommandServer.h
+    Managers/DataBaseManagers/DataBaseUserManager.h
+    Managers/InterfaceDAO/InterfaceDAO.h
+    InvokerCommand/InvokerCommand.h
+    Encryptor/RSAEncryptor.h
 )
 
 add_subdirectory(${CMAKE_SOURCE_DIR}/../Common ${CMAKE_BINARY_DIR}/Common)
