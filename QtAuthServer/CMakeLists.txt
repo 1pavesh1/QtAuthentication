@@ -33,6 +33,7 @@ qt_add_executable(QtAuthServer
     InvokerCommand/InvokerCommand.h
     Encryptor/RSAEncryptor.h
     DataBase/DataBase.h
+    ConnectedClients/ListConnectedUser.h
 )
 
 add_subdirectory(${CMAKE_SOURCE_DIR}/../Common ${CMAKE_BINARY_DIR}/Common)
@@ -51,6 +52,7 @@ target_include_directories(QtAuthServer
     PRIVATE
         ${CMAKE_SOURCE_DIR}/../Data
         ${CMAKE_SOURCE_DIR}/../Common
+        ${CMAKE_SOURCE_DIR}/DataBase
 )
 
 include(GNUInstallDirs)
