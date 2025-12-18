@@ -5,6 +5,8 @@
 #include <QVector>
 #include <QTcpSocket>
 #include <QDataStream>
+#include "../Data/Data.h"
+#include "../Data/Enum/TypeQuery.h"
 
 class InterfaceSocketAdapter : public QObject
 {
@@ -12,7 +14,7 @@ class InterfaceSocketAdapter : public QObject
 public:
     explicit InterfaceSocketAdapter(QObject *parent);
     virtual ~InterfaceSocketAdapter();
-    virtual void sendString(const QString& str) = 0;
+    virtual void sendString(const TypeQuery &typeQuery, const Data &data);
 signals:
     void message(QString text);
     void disconnected();

@@ -15,21 +15,23 @@ private:
     QString     entryTime;
     QString     dateBithday;
 
+    bool        isOnline;
+
     void serialize(QDataStream &out) const override
     {
         out << idUser << login << password << phone << email
-            << entryTime << dateBithday;
+            << entryTime << dateBithday << isOnline;
     }
 
     void deserialize(QDataStream &in) override
     {
         in  >> idUser >> login >> password >> phone >> email
-            >> entryTime >> dateBithday;
+            >> entryTime >> dateBithday >> isOnline;
     }
 
 public:
     UserModel() : idUser(0), login(""), password(""), phone(""), email(""),
-        entryTime(""), dateBithday("")
+        entryTime(""), dateBithday(""), isOnline(false)
     {
 
     }
@@ -42,6 +44,7 @@ public:
     QString     GetEmail()               const              { return email;                }
     QString     GetEntryTime()           const              { return entryTime;            }
     QString     GetDateBithday()         const              { return dateBithday;          }
+    bool        GetStatus()              const              { return isOnline;             }
 
     void SetIdUser(const qint32 &idUser)                                    { this->idUser              = idUser;               }
     void SetAccessCode(const qint32 &accessCode)                            { this->accessCode          = accessCode;           }
@@ -51,6 +54,7 @@ public:
     void SetEmail(const QString &email)                                     { this->email               = email;                }
     void SetEntryTime(const QString &entryTime)                             { this->entryTime           = entryTime;            }
     void SetDateBithday(const QString &dateBithday)                         { this->dateBithday         = dateBithday;          }
+    void SetStatus(const bool &isOnline)                                    { this->isOnline            = isOnline;             }
 };
 
 #endif // USERMODEL_H

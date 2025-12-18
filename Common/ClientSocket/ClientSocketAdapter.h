@@ -3,10 +3,13 @@
 
 #include "../Sockets/SocketsType/SocketAdapter.h"
 
-class ClientSocketAdapter : public SocketAdapter {
+class ClientSocketAdapter : public SocketAdapter
+{
     Q_OBJECT
 public:
     explicit ClientSocketAdapter(QObject *parent);
+protected slots:
+    void on_readyRead() override;
 };
 // MainWidget::MainWidget(QWidget *parent) :
 //     QWidget(parent), m_pForm(new Ui::Form()), m_pSock(new ClientSocketAdapter(this)) {

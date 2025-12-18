@@ -16,6 +16,7 @@ add_library(Data STATIC
   Data.h
   DTO/UserModel.h
   Enum/TypeNotification.h
+  Enum/TypeQuery.h
 )
 
 target_link_libraries(Data

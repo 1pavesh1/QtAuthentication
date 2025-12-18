@@ -8,8 +8,8 @@ class InterfaceDAO
 {
 public:
     virtual QList<T> findAll() const;
-    virtual QList<T> findById(const qint32 &id) const;
-    virtual bool insertData(const T &data) const;
+    virtual T findById(const qint32 &id) const;
+    virtual bool insertData(T &data) const;
     virtual bool deleteData(const T &data) const;
     virtual bool updateData(const T &data) const;
 };

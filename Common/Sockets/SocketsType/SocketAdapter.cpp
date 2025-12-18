@@ -13,41 +13,17 @@ SocketAdapter::SocketAdapter(QObject *parent, QTcpSocket *pSock)
 
 SocketAdapter::~SocketAdapter() { }
 
-void SocketAdapter::sendString(const QString& str)
+void SocketAdapter::sendString(const TypeQuery &typeQuery, const Data &data)
 {
     QByteArray block;
-    QDataStream sendStream(&block, QIODevice::ReadWrite);
+    QDataStream out(&block, QIODevice::ReadWrite);
 
-    sendStream << quint16(0) << str;
+    out << quint32(0) << typeQuery << data;
 
-    sendStream.device()->seek(0);
-    sendStream << (quint16)(block.size() - sizeof(quint16));
+    out.device()->seek(0);
+    out << (quint32)(block.size() - sizeof(quint32));
 
     pointerTcpSocket->write(block);
-}
-
-void SocketAdapter::on_readyRead()
-{
-    QString buff;
-    QDataStream stream(pointerTcpSocket);
-
-    while(true)
-    {
-        if (msgSize < 0)
-        {
-            if (pointerTcpSocket->bytesAvailable() < sizeof(int))
-                return;
-            stream >> msgSize;
-        }
-        else
-        {
-            if (pointerTcpSocket->bytesAvailable() < msgSize)
-                return;
-            stream >> buff;
-            emit message(buff);
-            msgSize = -1;
-        }
-    }
 }
 
 void SocketAdapter::on_disconnected()

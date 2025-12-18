@@ -2,6 +2,7 @@
 #define DATABASE_H
 
 #include <QSqlDatabase>
+#include <QSqlQuery>
 #include <QSqlError>
 #include <QDebug>
 #include <QString>

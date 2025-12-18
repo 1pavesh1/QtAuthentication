@@ -20,7 +20,8 @@ add_library(Common STATIC
   ServerSocket/ServerSocketAdapter.h ServerSocket/ServerSocketAdapter.cpp
 )
 
-target_link_libraries(Common PRIVATE
+target_link_libraries(Common
+  PRIVATE
     Qt${QT_VERSION_MAJOR}::Core
     Qt${QT_VERSION_MAJOR}::Network
 )
